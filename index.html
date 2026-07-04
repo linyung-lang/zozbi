@@ -1,0 +1,610 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="ZOZ — 极简主义高端服装品牌。探索我们精选的当季新品，每一件作品都是对形式与材质的深度思考。" />
+  <title>ZOZ — 高端极简服装</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;1,300;1,400&family=Inter:wght@300;400;500;600&family=Playfair+Display:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+
+  <!-- ===================== HEADER / NAV ===================== -->
+  <header class="site-header" id="site-header">
+    <div class="header-inner">
+      <button class="hamburger" id="hamburger" aria-label="菜单" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+
+      <a href="#" class="logo" id="nav-logo" data-page="home">ZOZ</a>
+
+      <nav class="main-nav" id="main-nav" aria-label="主导航">
+        <ul>
+          <li><a href="#" class="nav-link active" data-page="home">首页</a></li>
+          <li><a href="#" class="nav-link" data-page="products">产品</a></li>
+          <li><a href="#" class="nav-link" data-page="brand">品牌</a></li>
+          <li><a href="#" class="nav-link" data-page="lookbook">Lookbook</a></li>
+          <li><a href="#" class="nav-link" data-page="contact">联系</a></li>
+        </ul>
+      </nav>
+
+      <div class="header-actions">
+        <button class="icon-btn" aria-label="搜索" id="search-btn">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><circle cx="11" cy="11" r="8"/><path d="M21 21l-4.35-4.35"/></svg>
+        </button>
+        <button class="icon-btn" aria-label="购物袋" id="cart-btn">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M6 2L3 6v14a2 2 0 002 2h14a2 2 0 002-2V6l-3-4z"/><line x1="3" y1="6" x2="21" y2="6"/><path d="M16 10a4 4 0 01-8 0"/></svg>
+          <span class="cart-badge">2</span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- Mobile Nav Overlay -->
+  <div class="mobile-overlay" id="mobile-overlay"></div>
+
+  <!-- ===================== PAGES CONTAINER ===================== -->
+  <main id="pages-container">
+
+    <!-- ========== PAGE: HOME ========== -->
+    <section class="page active" id="page-home">
+
+      <!-- Hero Banner -->
+      <div class="hero" id="hero">
+        <div class="hero-image-wrap">
+          <img src="images/hero_banner.png" alt="ZOZ 2025 秋冬新品" class="hero-img lazy" data-src="images/hero_banner.png" />
+          <div class="hero-overlay"></div>
+        </div>
+        <div class="hero-content">
+          <span class="hero-season">2025 秋冬系列</span>
+          <h1 class="hero-title">
+            <em>寂静</em><br />之美
+          </h1>
+          <p class="hero-subtitle">少即是多 — 每一件作品都是对形式的凝练</p>
+          <div class="hero-actions">
+            <button class="btn btn-primary" data-page="products">探索系列</button>
+            <button class="btn btn-ghost" data-page="lookbook">Lookbook</button>
+          </div>
+        </div>
+        <div class="hero-scroll-hint">
+          <span>向下滚动</span>
+          <div class="scroll-line"></div>
+        </div>
+      </div>
+
+      <!-- New Arrivals -->
+      <section class="home-section new-arrivals">
+        <div class="section-header">
+          <div class="section-label">New Arrivals</div>
+          <h2 class="section-title">当季新品</h2>
+          <p class="section-desc">精心挑选，献给对品质有追求的你</p>
+        </div>
+        <div class="featured-grid">
+          <div class="featured-card large" data-page="products">
+            <div class="card-img-wrap">
+              <img data-src="images/product_2.png" alt="极简风衣" class="lazy" />
+            </div>
+            <div class="card-info">
+              <span class="card-tag">新品</span>
+              <h3>经典极简风衣</h3>
+              <span class="card-price">¥ 3,280</span>
+            </div>
+          </div>
+          <div class="featured-right">
+            <div class="featured-card" data-page="products">
+              <div class="card-img-wrap">
+                <img data-src="images/product_1.png" alt="高领毛衣" class="lazy" />
+              </div>
+              <div class="card-info">
+                <span class="card-tag">热销</span>
+                <h3>羊绒高领毛衣</h3>
+                <span class="card-price">¥ 1,680</span>
+              </div>
+            </div>
+            <div class="featured-card" data-page="products">
+              <div class="card-img-wrap">
+                <img data-src="images/product_4.png" alt="真丝衬衫" class="lazy" />
+              </div>
+              <div class="card-info">
+                <span class="card-tag">新品</span>
+                <h3>真丝质感衬衫</h3>
+                <span class="card-price">¥ 2,100</span>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="section-footer">
+          <button class="btn btn-outline" data-page="products">查看全部产品</button>
+        </div>
+      </section>
+
+      <!-- Brand Teaser -->
+      <section class="home-section brand-teaser">
+        <div class="brand-teaser-inner">
+          <div class="brand-teaser-text">
+            <div class="section-label">Our Story</div>
+            <h2 class="section-title">源于对<br /><em>纯粹美学</em><br />的执念</h2>
+            <p>ZOZ 创立于 2015 年，我们相信真正的奢侈在于无声的品质。每一件 ZOZ 单品，都经历了数百小时的设计打磨与严格的材质筛选。</p>
+            <button class="btn btn-outline" data-page="brand">了解品牌</button>
+          </div>
+          <div class="brand-teaser-image">
+            <img data-src="images/brand_image.png" alt="ZOZ 工坊" class="lazy" />
+            <div class="brand-teaser-badge">Since 2015</div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Lookbook Preview -->
+      <section class="home-section lookbook-preview">
+        <div class="section-header centered">
+          <div class="section-label">Lookbook 2025</div>
+          <h2 class="section-title">穿着的艺术</h2>
+        </div>
+        <div class="lookbook-strip">
+          <div class="lookbook-strip-item" data-page="lookbook">
+            <img data-src="images/lookbook_1.png" alt="Lookbook 01" class="lazy" />
+            <div class="lookbook-strip-overlay">
+              <span>Vol. 01 — 黑白纪</span>
+            </div>
+          </div>
+          <div class="lookbook-strip-item" data-page="lookbook">
+            <img data-src="images/lookbook_2.png" alt="Lookbook 02" class="lazy" />
+            <div class="lookbook-strip-overlay">
+              <span>Vol. 02 — 素白</span>
+            </div>
+          </div>
+          <div class="lookbook-strip-item" data-page="lookbook">
+            <img data-src="images/lookbook_3.png" alt="Lookbook 03" class="lazy" />
+            <div class="lookbook-strip-overlay">
+              <span>Vol. 03 — 暗调</span>
+            </div>
+          </div>
+        </div>
+        <div class="section-footer">
+          <button class="btn btn-outline" data-page="lookbook">查看完整画册</button>
+        </div>
+      </section>
+
+      <!-- Newsletter -->
+      <section class="home-section newsletter-section">
+        <div class="newsletter-inner">
+          <div class="section-label">Newsletter</div>
+          <h2>订阅我们的故事</h2>
+          <p>新品上市、限定预售、品牌动态 — 第一时间送达</p>
+          <form class="newsletter-form" id="newsletter-form" onsubmit="return handleNewsletter(event)">
+            <input type="email" placeholder="您的邮箱地址" required aria-label="邮箱" />
+            <button type="submit" class="btn btn-primary">订阅</button>
+          </form>
+          <span class="newsletter-note">我们不发送垃圾邮件，随时可退订</span>
+        </div>
+      </section>
+
+    </section><!-- /page-home -->
+
+
+    <!-- ========== PAGE: PRODUCTS ========== -->
+    <section class="page" id="page-products">
+      <div class="page-hero-sm">
+        <div class="page-hero-label">Collection</div>
+        <h1 class="page-hero-title">产品系列</h1>
+        <p class="page-hero-desc">每一件单品，都是对材质与廓形的深度对话</p>
+      </div>
+
+      <div class="products-layout">
+        <!-- Sidebar Filters -->
+        <aside class="filters-sidebar" id="filters-sidebar">
+          <div class="filter-toggle-bar" id="filter-toggle">
+            <span>筛选</span>
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="6 9 12 15 18 9"/></svg>
+          </div>
+          <div class="filters-body" id="filters-body">
+            <div class="filter-group">
+              <h3 class="filter-group-title">品类</h3>
+              <div class="filter-options">
+                <label class="filter-option">
+                  <input type="radio" name="category" value="all" checked />
+                  <span>全部</span>
+                </label>
+                <label class="filter-option">
+                  <input type="radio" name="category" value="coat" />
+                  <span>外套</span>
+                </label>
+                <label class="filter-option">
+                  <input type="radio" name="category" value="top" />
+                  <span>上衣</span>
+                </label>
+                <label class="filter-option">
+                  <input type="radio" name="category" value="bottom" />
+                  <span>下装</span>
+                </label>
+              </div>
+            </div>
+            <div class="filter-group">
+              <h3 class="filter-group-title">颜色</h3>
+              <div class="color-swatches">
+                <button class="swatch active" data-color="all" style="background:linear-gradient(135deg,#000 50%,#fff 50%)" title="全部"></button>
+                <button class="swatch" data-color="black" style="background:#111" title="黑"></button>
+                <button class="swatch" data-color="white" style="background:#f5f0e8;border:1px solid #ddd" title="米白"></button>
+                <button class="swatch" data-color="grey" style="background:#888" title="灰"></button>
+              </div>
+            </div>
+            <div class="filter-group">
+              <h3 class="filter-group-title">价格区间</h3>
+              <div class="price-range">
+                <input type="range" id="price-slider" min="500" max="5000" value="5000" step="100" />
+                <div class="price-labels">
+                  <span>¥ 500</span>
+                  <span id="price-max-label">¥ 5000</span>
+                </div>
+              </div>
+            </div>
+            <div class="filter-group">
+              <h3 class="filter-group-title">排序</h3>
+              <select class="filter-select" id="sort-select">
+                <option value="default">默认排序</option>
+                <option value="price-asc">价格：低到高</option>
+                <option value="price-desc">价格：高到低</option>
+                <option value="newest">最新上架</option>
+              </select>
+            </div>
+            <button class="btn btn-outline btn-sm" id="reset-filters">重置筛选</button>
+          </div>
+        </aside>
+
+        <!-- Products Grid -->
+        <div class="products-main">
+          <div class="products-toolbar">
+            <span class="products-count" id="products-count">共 6 件产品</span>
+            <div class="view-toggles">
+              <button class="view-btn active" id="view-grid" aria-label="网格视图">
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><rect x="3" y="3" width="7" height="7"/><rect x="14" y="3" width="7" height="7"/><rect x="3" y="14" width="7" height="7"/><rect x="14" y="14" width="7" height="7"/></svg>
+              </button>
+              <button class="view-btn" id="view-list" aria-label="列表视图">
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><rect x="3" y="4" width="18" height="2"/><rect x="3" y="11" width="18" height="2"/><rect x="3" y="18" width="18" height="2"/></svg>
+              </button>
+            </div>
+          </div>
+
+          <div class="products-grid" id="products-grid">
+            <!-- Products injected by JS -->
+          </div>
+        </div>
+      </div>
+    </section><!-- /page-products -->
+
+
+    <!-- ========== PAGE: BRAND ========== -->
+    <section class="page" id="page-brand">
+      <div class="brand-hero">
+        <div class="brand-hero-text">
+          <span class="brand-hero-eyebrow">About ZOZ</span>
+          <h1 class="brand-hero-title">我们相信<br /><em>少，即是多</em></h1>
+        </div>
+      </div>
+
+      <div class="brand-story">
+        <div class="brand-story-grid">
+          <div class="brand-story-image">
+            <img data-src="images/brand_image.png" alt="ZOZ 工坊" class="lazy" />
+          </div>
+          <div class="brand-story-text">
+            <div class="section-label">Our Story</div>
+            <h2>源起 2015</h2>
+            <p>ZOZ 品牌由设计师 Zhou Oze 于 2015 年创立于上海。品牌名取自创始人姓名的缩写，也象征着一种自由的螺旋——不断回归本质，又向外延伸。</p>
+            <p>我们的设计语言植根于建筑美学与东方哲学：大量留白、廓形克制、材质诚实。每一件 ZOZ 单品拒绝过度装饰，让穿着者的气质成为最终的焦点。</p>
+            <p>我们选用经 OEKO-TEX® 认证的有机棉、意大利进口羊绒及再生面料，在坚持美学的同时，也对地球负责。</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Values -->
+      <div class="brand-values">
+        <div class="section-header centered">
+          <div class="section-label">Our Values</div>
+          <h2 class="section-title">品牌信仰</h2>
+        </div>
+        <div class="values-grid">
+          <div class="value-card">
+            <div class="value-number">01</div>
+            <h3>极简主义</h3>
+            <p>我们相信形式服务于功能。每一条线条、每一个接缝，都经过深思熟虑，不多不少。</p>
+          </div>
+          <div class="value-card">
+            <div class="value-number">02</div>
+            <h3>材质至上</h3>
+            <p>顶级的材质是奢侈品的灵魂。我们只选用通过道德审核的天然及可持续面料。</p>
+          </div>
+          <div class="value-card">
+            <div class="value-number">03</div>
+            <h3>匠心工艺</h3>
+            <p>我们在上海与苏州的合作工坊合作，与拥有三十年以上经验的技师共同完成每一件作品。</p>
+          </div>
+          <div class="value-card">
+            <div class="value-number">04</div>
+            <h3>可持续发展</h3>
+            <p>设计经典款式，拒绝快时尚。让每一件 ZOZ 都能在你的衣橱里存在十年，甚至更久。</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Timeline -->
+      <div class="brand-timeline">
+        <div class="section-header centered">
+          <div class="section-label">Milestones</div>
+          <h2 class="section-title">品牌历程</h2>
+        </div>
+        <div class="timeline">
+          <div class="timeline-item">
+            <div class="timeline-year">2015</div>
+            <div class="timeline-dot"></div>
+            <div class="timeline-content">
+              <h4>品牌创立</h4>
+              <p>ZOZ 在上海静安区的小工作室正式起步，首季仅发布 12 件单品。</p>
+            </div>
+          </div>
+          <div class="timeline-item">
+            <div class="timeline-year">2017</div>
+            <div class="timeline-dot"></div>
+            <div class="timeline-content">
+              <h4>上海时装周</h4>
+              <p>首次亮相上海时装周，获得多家时尚媒体专题报道。</p>
+            </div>
+          </div>
+          <div class="timeline-item">
+            <div class="timeline-year">2019</div>
+            <div class="timeline-dot"></div>
+            <div class="timeline-content">
+              <h4>实体旗舰店</h4>
+              <p>上海新天地旗舰店开业，成为品牌线下体验核心。</p>
+            </div>
+          </div>
+          <div class="timeline-item">
+            <div class="timeline-year">2022</div>
+            <div class="timeline-dot"></div>
+            <div class="timeline-content">
+              <h4>可持续认证</h4>
+              <p>全线产品通过 OEKO-TEX® Standard 100 认证，完成供应链可追溯体系建设。</p>
+            </div>
+          </div>
+          <div class="timeline-item">
+            <div class="timeline-year">2025</div>
+            <div class="timeline-dot"></div>
+            <div class="timeline-content">
+              <h4>十周年系列</h4>
+              <p>十周年限量胶囊系列发布，回归初心，致敬每一位 ZOZ 的支持者。</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </section><!-- /page-brand -->
+
+
+    <!-- ========== PAGE: LOOKBOOK ========== -->
+    <section class="page" id="page-lookbook">
+      <div class="page-hero-sm">
+        <div class="page-hero-label">Visual Story</div>
+        <h1 class="page-hero-title">Lookbook 2025</h1>
+        <p class="page-hero-desc">秋冬系列视觉影集 — 寂静与克制的叙事</p>
+      </div>
+
+      <!-- Chapter tabs -->
+      <div class="lookbook-tabs">
+        <button class="lb-tab active" data-chapter="all">全部</button>
+        <button class="lb-tab" data-chapter="vol1">Vol.01 黑白纪</button>
+        <button class="lb-tab" data-chapter="vol2">Vol.02 素白</button>
+        <button class="lb-tab" data-chapter="vol3">Vol.03 暗调</button>
+      </div>
+
+      <!-- Lookbook Masonry Grid -->
+      <div class="lookbook-masonry" id="lookbook-grid">
+        <div class="lb-item lb-large" data-chapter="vol1">
+          <img data-src="images/lookbook_1.png" alt="Lookbook Vol.01" class="lazy" />
+          <div class="lb-caption">
+            <span class="lb-vol">Vol. 01</span>
+            <h3>黑白纪</h3>
+            <p>当色彩退场，廓形才是语言</p>
+          </div>
+        </div>
+        <div class="lb-item" data-chapter="vol2">
+          <img data-src="images/lookbook_2.png" alt="Lookbook Vol.02" class="lazy" />
+          <div class="lb-caption">
+            <span class="lb-vol">Vol. 02</span>
+            <h3>素白</h3>
+            <p>以白为底，以光为笔</p>
+          </div>
+        </div>
+        <div class="lb-item" data-chapter="vol3">
+          <img data-src="images/lookbook_3.png" alt="Lookbook Vol.03" class="lazy" />
+          <div class="lb-caption">
+            <span class="lb-vol">Vol. 03</span>
+            <h3>暗调</h3>
+            <p>深色之中，自有力量</p>
+          </div>
+        </div>
+        <div class="lb-item lb-wide" data-chapter="vol1">
+          <img data-src="images/product_5.png" alt="Product styling" class="lazy" />
+          <div class="lb-caption">
+            <span class="lb-vol">Detail</span>
+            <h3>结构的诗意</h3>
+            <p>西装的廓形，是建筑的语言</p>
+          </div>
+        </div>
+        <div class="lb-item" data-chapter="vol2">
+          <img data-src="images/product_4.png" alt="Silk styling" class="lazy" />
+          <div class="lb-caption">
+            <span class="lb-vol">Detail</span>
+            <h3>轻盈的重量</h3>
+          </div>
+        </div>
+        <div class="lb-item" data-chapter="vol3">
+          <img data-src="images/product_6.png" alt="Coat styling" class="lazy" />
+          <div class="lb-caption">
+            <span class="lb-vol">Detail</span>
+            <h3>织物的温度</h3>
+          </div>
+        </div>
+      </div>
+
+      <!-- Lookbook CTA -->
+      <div class="lookbook-cta">
+        <p>爱上某一件？</p>
+        <button class="btn btn-primary" data-page="products">前往购买</button>
+      </div>
+
+    </section><!-- /page-lookbook -->
+
+
+    <!-- ========== PAGE: CONTACT ========== -->
+    <section class="page" id="page-contact">
+      <div class="page-hero-sm">
+        <div class="page-hero-label">Get in Touch</div>
+        <h1 class="page-hero-title">联系我们</h1>
+        <p class="page-hero-desc">我们期待听到您的声音</p>
+      </div>
+
+      <div class="contact-layout">
+        <!-- Info Column -->
+        <div class="contact-info">
+          <div class="contact-block">
+            <h3>旗舰店</h3>
+            <p>上海市黄浦区马当路<br />新天地时尚广场 B1-02</p>
+            <p class="contact-hours">营业时间：周一至周日 10:00 – 21:00</p>
+          </div>
+          <div class="contact-block">
+            <h3>客户服务</h3>
+            <p><a href="mailto:hello@zoz-studio.com">hello@zoz-studio.com</a></p>
+            <p><a href="tel:+862123456789">+86 (021) 2345-6789</a></p>
+          </div>
+          <div class="contact-block">
+            <h3>媒体 & 合作</h3>
+            <p><a href="mailto:press@zoz-studio.com">press@zoz-studio.com</a></p>
+          </div>
+          <div class="contact-social">
+            <a href="#" class="social-link" aria-label="微博">微博</a>
+            <a href="#" class="social-link" aria-label="小红书">小红书</a>
+            <a href="#" class="social-link" aria-label="微信">微信</a>
+            <a href="#" class="social-link" aria-label="Instagram">Instagram</a>
+          </div>
+        </div>
+
+        <!-- Form Column -->
+        <div class="contact-form-wrap">
+          <form class="contact-form" id="contact-form" onsubmit="return handleContact(event)">
+            <div class="form-row">
+              <div class="form-group">
+                <label for="contact-name">姓名 <span>*</span></label>
+                <input type="text" id="contact-name" placeholder="您的姓名" required />
+              </div>
+              <div class="form-group">
+                <label for="contact-email">邮箱 <span>*</span></label>
+                <input type="email" id="contact-email" placeholder="your@email.com" required />
+              </div>
+            </div>
+            <div class="form-group">
+              <label for="contact-subject">主题</label>
+              <select id="contact-subject">
+                <option value="">请选择主题</option>
+                <option value="order">订单查询</option>
+                <option value="product">产品咨询</option>
+                <option value="return">退换货</option>
+                <option value="press">媒体合作</option>
+                <option value="other">其他</option>
+              </select>
+            </div>
+            <div class="form-group">
+              <label for="contact-message">留言 <span>*</span></label>
+              <textarea id="contact-message" rows="5" placeholder="请告诉我们您的问题或想法..." required></textarea>
+            </div>
+            <div class="form-group checkbox-group">
+              <label class="checkbox-label">
+                <input type="checkbox" id="contact-consent" required />
+                <span>我同意 ZOZ 按照隐私政策处理我的个人信息</span>
+              </label>
+            </div>
+            <button type="submit" class="btn btn-primary btn-full" id="contact-submit">发送留言</button>
+          </form>
+        </div>
+      </div>
+
+      <!-- Map Placeholder -->
+      <div class="map-section">
+        <div class="map-placeholder">
+          <div class="map-pin">
+            <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z"/><circle cx="12" cy="10" r="3"/></svg>
+          </div>
+          <div class="map-label">
+            <strong>ZOZ 上海旗舰店</strong><br />
+            上海市黄浦区马当路 新天地时尚广场 B1-02
+          </div>
+          <div class="map-grid"></div>
+        </div>
+      </div>
+
+    </section><!-- /page-contact -->
+
+  </main><!-- /pages-container -->
+
+  <!-- ===================== FOOTER ===================== -->
+  <footer class="site-footer">
+    <div class="footer-inner">
+      <div class="footer-top">
+        <div class="footer-brand">
+          <div class="footer-logo">ZOZ</div>
+          <p class="footer-tagline">极简·持续·至美</p>
+        </div>
+        <div class="footer-links">
+          <div class="footer-col">
+            <h4>系列</h4>
+            <ul>
+              <li><a href="#" data-page="products">当季新品</a></li>
+              <li><a href="#" data-page="products">外套系列</a></li>
+              <li><a href="#" data-page="products">上衣系列</a></li>
+              <li><a href="#" data-page="products">下装系列</a></li>
+            </ul>
+          </div>
+          <div class="footer-col">
+            <h4>品牌</h4>
+            <ul>
+              <li><a href="#" data-page="brand">品牌故事</a></li>
+              <li><a href="#" data-page="lookbook">Lookbook</a></li>
+              <li><a href="#" data-page="contact">媒体合作</a></li>
+              <li><a href="#" data-page="contact">招聘</a></li>
+            </ul>
+          </div>
+          <div class="footer-col">
+            <h4>服务</h4>
+            <ul>
+              <li><a href="#" data-page="contact">联系我们</a></li>
+              <li><a href="#">配送说明</a></li>
+              <li><a href="#">退换货政策</a></li>
+              <li><a href="#">隐私政策</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>&copy; 2025 ZOZ Studio. All rights reserved.</p>
+        <p>Design by ZOZ Creative Team</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Toast -->
+  <div class="toast" id="toast" role="alert" aria-live="polite"></div>
+
+  <!-- Image Lightbox -->
+  <div class="lightbox" id="lightbox" role="dialog" aria-modal="true" aria-label="图片查看">
+    <button class="lightbox-close" id="lightbox-close" aria-label="关闭">&times;</button>
+    <div class="lightbox-content">
+      <img id="lightbox-img" src="" alt="" />
+    </div>
+    <div class="lightbox-caption" id="lightbox-caption"></div>
+  </div>
+
+  <script src="js/main.js"></script>
+</body>
+</html>
